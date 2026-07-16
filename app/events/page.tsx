@@ -13,6 +13,7 @@ const EVENTS = [
   { d: "24", m: "Jul", title: "Coffee Ceremony Evening", desc: "A traditional three-round jebena coffee ceremony with popcorn and incense. Reservation required, limited seating." },
   { d: "2", m: "Aug", title: "Family Style Sunday", desc: "Kids eat free with an adult entrée purchase, all day Sunday." },
   { d: "9", m: "Aug", title: "Lounge DJ Night", desc: "Guest DJ, extended happy hour until 9pm, lounge menu only." },
+  { d: "16", m: "Aug", title: "Chef's Tasting Table", desc: "A guided tasting of five plates paired with house cocktails and a chef introduction." },
 ];
 
 export default function EventsPage() {
@@ -58,6 +59,24 @@ export default function EventsPage() {
               <Reveal><Card><h3>Happy Hour</h3><p className="text-sm text-muted-foreground">4–6pm, Monday through Friday. Half-price house cocktails and select small plates.</p></Card></Reveal>
               <Reveal delay={100}><Card><h3>Birthday Coffee</h3><p className="text-sm text-muted-foreground">Show up on your birthday and your first round of Mesi Gebeta coffee is on us.</p></Card></Reveal>
               <Reveal delay={200}><Card><h3>Loyalty Table</h3><p className="text-sm text-muted-foreground">Ask your server about our stamp card — ten visits earns a free shared plate.</p></Card></Reveal>
+            </div>
+          </div>
+
+          <div className="mt-16 rounded border border-foreground/10 bg-[rgb(var(--espresso))] p-8 text-[rgb(246_238_223)]">
+            <SectionHead eyebrow="Plan your visit" title="Make the most of your evening." className="mb-6" />
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+              <div>
+                <h3 className="text-[rgb(246_238_223)]">Best seats</h3>
+                <p className="mt-2 text-sm text-[rgb(246_238_223)]/75">The patio is ideal for sunset meals, while the lounge is best for late-night drinks.</p>
+              </div>
+              <div>
+                <h3 className="text-[rgb(246_238_223)]">Best time</h3>
+                <p className="mt-2 text-sm text-[rgb(246_238_223)]/75">Reservations are especially helpful for Friday and Saturday evenings, and for coffee ceremonies.</p>
+              </div>
+              <div>
+                <h3 className="text-[rgb(246_238_223)]">Best for</h3>
+                <p className="mt-2 text-sm text-[rgb(246_238_223)]/75">Date nights, birthdays, work dinners, and casual catch-ups with friends.</p>
+              </div>
             </div>
           </div>
 

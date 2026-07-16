@@ -91,8 +91,9 @@ export function ReservationForm() {
       </p>
 
       {submitted && (
-        <div role="status" className="mt-4 rounded bg-secondary px-5 py-4 text-sm text-secondary-foreground">
-          Thank you — your inquiry has been noted. Our team will confirm your reservation shortly.
+        <div role="status" className="mt-4 rounded border border-secondary/30 bg-secondary/10 px-5 py-4 text-sm text-foreground">
+          <p className="font-semibold text-primary">Thanks — we’ve received your request.</p>
+          <p className="mt-1 text-muted-foreground">Our team will confirm your reservation shortly and follow up with any special requests.</p>
         </div>
       )}
     </form>

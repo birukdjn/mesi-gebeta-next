@@ -32,6 +32,9 @@ export default function ContactPage() {
         <div className="mx-auto grid max-w-container gap-14 lg:grid-cols-2">
           <Reveal>
             <h2>Get in touch</h2>
+            <p className="mt-3 text-sm text-muted-foreground">
+              Whether you are planning a dinner for two, a birthday celebration, or a slow coffee stop, we are happy to help you find the right table.
+            </p>
             <div className="mt-4 flex flex-col gap-5">
               {INFO.map(({ icon: Icon, title, body }) => (
                 <div key={title} className="flex gap-4">

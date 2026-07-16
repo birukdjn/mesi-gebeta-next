@@ -125,12 +125,42 @@ export default function HomePage() {
           <Reveal delay={100}>
             <MenuList
               items={[
-                { name: "Doro Wat Stew", desc: "Slow-simmered chicken, berbere, boiled egg, served with injera.", price: "$16" },
-                { name: "Tibs Skillet", desc: "Pan-seared beef, rosemary, peppers, onions.", price: "$18" },
-                { name: "Mesi Gebeta Coffee", desc: "House-roasted, brewed in a traditional jebena.", price: "$5" },
+                { name: "Doro Wat Stew", desc: "Slow-simmered chicken, berbere, boiled egg, served with injera.", price: "$16", tags: ["Chef's pick"] },
+                { name: "Tibs Skillet", desc: "Pan-seared beef, rosemary, peppers, onions.", price: "$18", tags: ["New"] },
+                { name: "Mesi Gebeta Coffee", desc: "House-roasted, brewed in a traditional jebena.", price: "$5", tags: ["Signature"] },
               ]}
             />
           </Reveal>
+        </div>
+      </section>
+
+      {/* EXPERIENCE HIGHLIGHTS */}
+      <section className="px-6 py-20 sm:py-24">
+        <div className="mx-auto max-w-container">
+          <SectionHead center eyebrow="Experience highlights" title="A place for dinner, coffee, and lingering conversations." />
+          <div className="grid grid-cols-1 gap-7 lg:grid-cols-3">
+            {[
+              {
+                title: "Traditional coffee rituals",
+                copy: "Join a three-round coffee ceremony with fresh incense, popcorn, and a slow pour that turns a simple break into a ritual.",
+              },
+              {
+                title: "Evening lounge energy",
+                copy: "The lounge shifts with the night: candlelight, rich pours, house playlists, and a room built for staying a little longer.",
+              },
+              {
+                title: "Private tables and gatherings",
+                copy: "Host a birthday, intimate celebration, or working dinner with flexible seating and a team that knows how to make a table feel special.",
+              },
+            ].map((item, i) => (
+              <Reveal key={item.title} delay={i * 100}>
+                <div className="rounded border border-foreground/10 bg-card p-7">
+                  <h3>{item.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{item.copy}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
