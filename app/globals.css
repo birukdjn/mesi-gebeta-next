@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================
+   MESI GEBETA — design tokens (RGB channel triplets so
+   Tailwind's <alpha-value> opacity modifiers work, e.g. bg-primary/10)
+   ========================================================= */
+:root {
+  --background: 246 238 223;      /* cream */
+  --foreground: 36 26 18;         /* ink */
+  --card: 239 227 204;            /* cream-2 */
+  --card-foreground: 36 26 18;
+  --border: 36 26 18;             /* used at low alpha */
+  --muted: 239 227 204;
+  --muted-foreground: 74 58 44;   /* ink-soft */
+
+  --primary: 140 59 31;           /* brick */
+  --primary-foreground: 246 238 223;
+
+  --secondary: 91 107 63;         /* olive */
+  --secondary-foreground: 246 238 223;
+
+  --accent: 201 154 62;           /* gold */
+  --accent-foreground: 36 26 18;
+
+  --espresso: 46 31 22;           /* always-dark band: hero, footer */
+}
+
+.dark {
+  --background: 28 19 13;         /* deep espresso */
+  --foreground: 246 238 223;      /* cream */
+  --card: 46 31 22;               /* espresso */
+  --card-foreground: 246 238 223;
+  --border: 246 238 223;
+  --muted: 46 31 22;
+  --muted-foreground: 201 184 158;
+
+  --primary: 201 154 62;          /* gold pops on dark bg */
+  --primary-foreground: 36 26 18;
+
+  --secondary: 91 107 63;
+  --secondary-foreground: 246 238 223;
+
+  --accent: 140 59 31;            /* brick as secondary highlight */
+  --accent-foreground: 246 238 223;
+
+  --espresso: 46 31 22;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display font-semibold tracking-tight text-foreground;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ---------- Signature element: the "gebeta weave" divider ---------- */
+.weave {
+  height: 20px;
+  width: 100%;
+  background-image:
+    repeating-linear-gradient(45deg, rgb(var(--accent)) 0 3px, transparent 3px 12px),
+    repeating-linear-gradient(-45deg, rgb(var(--primary)) 0 3px, transparent 3px 12px);
+  background-size: 24px 20px;
+  background-position: center;
+  opacity: 0.9;
+}
+.weave-dim {
+  background-image:
+    repeating-linear-gradient(45deg, rgb(var(--accent)) 0 3px, transparent 3px 12px),
+    repeating-linear-gradient(-45deg, rgb(246 238 223) 0 3px, transparent 3px 12px);
+  opacity: 0.3;
+}
+
+/* Prose max-width helper for readable copy blocks */
+.prose-copy {
+  max-width: 62ch;
+}
