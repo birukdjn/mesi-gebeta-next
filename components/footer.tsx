@@ -1,6 +1,14 @@
 import Link from "next/link";
 import { Music2 } from "lucide-react";
-import { FaFacebookF, FaInstagram } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa6";
+
+const SOCIAL_LINKS = [
+  { label: "Facebook", href: "https://www.facebook.com/@birukdjn", icon: FaFacebookF },
+  { label: "Instagram", href: "https://www.instagram.com/@birukdjn", icon: FaInstagram },
+  { label: "GitHub", href: "https://github.com/birukdjn", icon: FaGithub },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/birukdjn", icon: FaLinkedin },
+  { label: "Music", href: "https://www.tiktok.com/@birukdjn", icon: Music2 },
+];
 
 export function Footer() {
   return (
@@ -22,15 +30,13 @@ export function Footer() {
             <p className="mt-4 text-sm text-[rgb(246_238_223)]/70">
               A neighborhood table for shared plates, slow coffee, and easy evenings. Come as you are.
             </p>
-            <div className="mt-5 flex gap-3">
-              {[
-                { icon: FaFacebookF, label: "Facebook" },
-                { icon: FaInstagram, label: "Instagram" },
-                { icon: Music2, label: "Music" },
-              ].map(({ icon: Icon, label }, i) => (
+            <div className="mt-5 flex flex-wrap gap-3">
+              {SOCIAL_LINKS.map(({ href, icon: Icon, label }) => (
                 <a
-                  key={i}
-                  href="#"
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
                   aria-label={`${label} link`}
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-[rgb(246_238_223)]/20 transition-colors hover:border-[rgb(var(--accent))] hover:text-[rgb(var(--accent))]"
                 >

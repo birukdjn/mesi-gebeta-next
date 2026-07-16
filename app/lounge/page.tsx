@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Wine as Cocktail, Music, CalendarCheck } from "lucide-react";
+import { Wine as Cocktail, Music, CalendarCheck, Sparkles } from "lucide-react";
 import { PageHeader, WeaveDivider, SectionHead, Card, IconBadge } from "@/components/ui";
 import { Reveal } from "@/components/reveal";
 import { MenuList } from "@/components/menu-list";
@@ -23,8 +23,24 @@ export default function LoungePage() {
 
       <section className="px-6 py-20 sm:py-24">
         <div className="mx-auto max-w-container">
-          <SectionHead center eyebrow="What's on" title="The lounge, by the hour." />
-          <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mb-12 grid grid-cols-1 gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+            <Reveal>
+              <div>
+                <SectionHead center={false} eyebrow="What's on" title="The lounge, by the hour." />
+                <p className="max-w-xl text-sm text-muted-foreground">
+                  A warm bar scene, polished service, and thoughtfully layered drinks create an evening that feels indulgent without being overly formal.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={100}>
+              <img
+                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1000&q=80"
+                alt="Stylish lounge bar with cocktails and warm lighting"
+                className="w-full rounded-[2rem] object-cover shadow-xl"
+              />
+            </Reveal>
+          </div>
+          <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
             <Reveal>
               <Card>
                 <IconBadge><Cocktail size={19} /></IconBadge>
@@ -44,6 +60,13 @@ export default function LoungePage() {
                 <IconBadge><CalendarCheck size={19} /></IconBadge>
                 <h3>Private Bookings</h3>
                 <p className="text-sm text-muted-foreground">Reserve the lounge corner for birthdays, work gatherings, and small celebrations.</p>
+              </Card>
+            </Reveal>
+            <Reveal delay={300}>
+              <Card>
+                <IconBadge><Sparkles size={19} /></IconBadge>
+                <h3>Signature Service</h3>
+                <p className="text-sm text-muted-foreground">Every guest receives a polished welcome, thoughtful recommendations, and a room that feels effortless.</p>
               </Card>
             </Reveal>
           </div>

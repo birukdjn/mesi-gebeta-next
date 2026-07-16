@@ -6,45 +6,45 @@
    Tailwind's <alpha-value> opacity modifiers work, e.g. bg-primary/10)
    ========================================================= */
 :root {
-  --background: 246 238 223;      /* cream */
-  --foreground: 36 26 18;         /* ink */
-  --card: 239 227 204;            /* cream-2 */
-  --card-foreground: 36 26 18;
-  --border: 36 26 18;             /* used at low alpha */
-  --muted: 239 227 204;
-  --muted-foreground: 74 58 44;   /* ink-soft */
+  --background: 251 245 235;      /* warm ivory */
+  --foreground: 44 29 19;         /* deep espresso */
+  --card: 255 250 242;            /* soft cream */
+  --card-foreground: 44 29 19;
+  --border: 113 79 49;            /* warm brown */
+  --muted: 240 233 218;
+  --muted-foreground: 103 76 57;  /* rich taupe */
 
-  --primary: 140 59 31;           /* brick */
-  --primary-foreground: 246 238 223;
+  --primary: 142 72 34;           /* roasted amber */
+  --primary-foreground: 255 250 242;
 
-  --secondary: 91 107 63;         /* olive */
-  --secondary-foreground: 246 238 223;
+  --secondary: 98 115 72;         /* olive green */
+  --secondary-foreground: 255 250 242;
 
-  --accent: 201 154 62;           /* gold */
-  --accent-foreground: 36 26 18;
+  --accent: 193 128 44;           /* gold bronze */
+  --accent-foreground: 44 29 19;
 
-  --espresso: 46 31 22;           /* always-dark band: hero, footer */
+  --espresso: 43 27 17;           /* dark cocoa */
 }
 
 .dark {
-  --background: 28 19 13;         /* deep espresso */
-  --foreground: 246 238 223;      /* cream */
-  --card: 46 31 22;               /* espresso */
-  --card-foreground: 246 238 223;
-  --border: 246 238 223;
-  --muted: 46 31 22;
-  --muted-foreground: 201 184 158;
+  --background: 28 18 13;         /* midnight espresso */
+  --foreground: 248 240 228;      /* warm cream */
+  --card: 47 31 22;
+  --card-foreground: 248 240 228;
+  --border: 214 180 129;
+  --muted: 72 52 38;
+  --muted-foreground: 226 206 181;
 
-  --primary: 201 154 62;          /* gold pops on dark bg */
-  --primary-foreground: 36 26 18;
+  --primary: 215 150 72;          /* warm gold */
+  --primary-foreground: 31 20 14;
 
-  --secondary: 91 107 63;
-  --secondary-foreground: 246 238 223;
+  --secondary: 121 145 91;
+  --secondary-foreground: 248 240 228;
 
-  --accent: 140 59 31;            /* brick as secondary highlight */
-  --accent-foreground: 246 238 223;
+  --accent: 186 117 41;          /* amber glow */
+  --accent-foreground: 248 240 228;
 
-  --espresso: 46 31 22;
+  --espresso: 25 16 11;
 }
 
 @layer base {

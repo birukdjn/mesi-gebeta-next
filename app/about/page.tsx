@@ -44,9 +44,11 @@ export default function AboutPage() {
             </p>
           </Reveal>
           <Reveal delay={100}>
-            <div className="aspect-[4/5] rounded bg-gradient-to-br from-[#5B6B3F] to-[rgb(var(--espresso))] p-5 text-sm text-[rgb(246_238_223)] flex items-end">
-              Placeholder photo — founding table, 2014
-            </div>
+            <img
+              src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80"
+              alt="Warm restaurant interior with candlelight and dining tables"
+              className="aspect-[4/5] w-full rounded-3xl object-cover shadow-xl"
+            />
           </Reveal>
         </div>
       </section>
@@ -87,8 +89,12 @@ export default function AboutPage() {
             {TEAM.map((person, i) => (
               <Reveal key={person.name} delay={i * 100}>
                 <div>
-                  <div className={`aspect-square rounded bg-gradient-to-br ${person.gradient} p-4 text-xs text-[rgb(246_238_223)] flex items-end`}>
-                    Placeholder photo
+                  <div className={`aspect-square overflow-hidden rounded-3xl bg-gradient-to-br ${person.gradient}`}>
+                    <img
+                      src={i === 0 ? "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" : i === 1 ? "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80" : "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"}
+                      alt={person.name}
+                      className="h-full w-full object-cover"
+                    />
                   </div>
                   <h3 className="mt-4">{person.name}</h3>
                   <p className="text-sm text-muted-foreground">{person.role}</p>

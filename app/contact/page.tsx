@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { MapPin, Phone, Mail, Clock, Music2 } from "lucide-react";
-import { FaFacebookF, FaInstagram } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { PageHeader, WeaveDivider } from "@/components/ui";
 import { Reveal } from "@/components/reveal";
 import { ReservationForm } from "@/components/reservation-form";
@@ -50,15 +50,19 @@ export default function ContactPage() {
             </div>
 
             <h3 className="mt-8">Follow along</h3>
-            <div className="mt-3 flex gap-3">
+            <div className="mt-3 flex flex-wrap gap-3">
               {[
-                { icon: FaFacebookF, label: "Facebook" },
-                { icon: FaInstagram, label: "Instagram" },
-                { icon: Music2, label: "Music" },
-              ].map(({ icon: Icon, label }, i) => (
+                { icon: FaFacebookF, label: "Facebook", href: "https://www.facebook.com/@birukdjn" },
+                { icon: FaInstagram, label: "Instagram", href: "https://www.instagram.com/@birukdjn" },
+                { icon: FaGithub, label: "GitHub", href: "https://github.com/birukdjn" },
+                { icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/birukdjn" },
+                { icon: Music2, label: "Music", href: "https://www.tiktok.com/@birukdjn" },
+              ].map(({ icon: Icon, label, href }) => (
                 <a
-                  key={i}
-                  href="#"
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
                   aria-label={`${label} link`}
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-foreground/15 transition-colors hover:border-primary hover:text-primary"
                 >

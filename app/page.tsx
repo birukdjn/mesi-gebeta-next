@@ -49,18 +49,12 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="mx-auto w-full max-w-[420px]" aria-hidden>
-            <svg viewBox="0 0 300 360" className="w-full">
-              <ellipse cx="150" cy="330" rx="90" ry="14" fill="rgb(var(--card))" />
-              <path d="M80 220 h140 l-14 90 a10 10 0 0 1-10 8 H104 a10 10 0 0 1-10-8 Z" fill="rgb(var(--accent))" />
-              <rect x="70" y="200" width="160" height="26" rx="6" fill="rgb(var(--primary))" />
-              <path d="M230 210 q34 6 30 34 q-4 26 -34 22" stroke="rgb(var(--accent))" strokeWidth="8" fill="none" strokeLinecap="round" />
-              <g stroke="rgb(246 238 223)" strokeWidth="6" fill="none" strokeLinecap="round" opacity="0.85">
-                <path className="animate-rise" d="M120 190 q-10 -24 6 -40 q14 -14 2 -40" />
-                <path className="animate-rise [animation-delay:1.2s]" d="M150 190 q10 -24 -6 -40 q-14 -14 -2 -40" />
-                <path className="animate-rise [animation-delay:2.4s]" d="M180 190 q-8 -24 8 -40 q12 -14 0 -40" />
-              </g>
-            </svg>
+          <div className="mx-auto w-full max-w-[480px] overflow-hidden rounded-[2rem] border border-[rgb(246_238_223)]/15 shadow-2xl shadow-black/30" aria-hidden>
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80"
+              alt="Elegant restaurant dining interior"
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
       </section>
