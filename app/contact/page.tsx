@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Music2 } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Music2 } from "lucide-react";
+import { FaFacebookF, FaInstagram } from "react-icons/fa6";
 import { PageHeader, WeaveDivider } from "@/components/ui";
 import { Reveal } from "@/components/reveal";
 import { ReservationForm } from "@/components/reservation-form";
@@ -47,11 +48,15 @@ export default function ContactPage() {
 
             <h3 className="mt-8">Follow along</h3>
             <div className="mt-3 flex gap-3">
-              {[Facebook, Instagram, Music2].map((Icon, i) => (
+              {[
+                { icon: FaFacebookF, label: "Facebook" },
+                { icon: FaInstagram, label: "Instagram" },
+                { icon: Music2, label: "Music" },
+              ].map(({ icon: Icon, label }, i) => (
                 <a
                   key={i}
                   href="#"
-                  aria-label="Social link"
+                  aria-label={`${label} link`}
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-foreground/15 transition-colors hover:border-primary hover:text-primary"
                 >
                   <Icon size={17} />

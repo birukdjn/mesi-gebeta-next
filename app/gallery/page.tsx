@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Facebook, Instagram, Music2 } from "lucide-react";
+import { Music2 } from "lucide-react";
+import { FaFacebookF, FaInstagram } from "react-icons/fa6";
 import { PageHeader, WeaveDivider } from "@/components/ui";
 import { Reveal } from "@/components/reveal";
 
@@ -56,11 +57,15 @@ export default function GalleryPage() {
           <h2 className="text-[rgb(246_238_223)]">Tag us in your photos.</h2>
           <p className="text-[rgb(246_238_223)]/75">Follow along and share your visit — we repost our favorites.</p>
           <div className="mt-4 flex justify-center gap-3">
-            {[Facebook, Instagram, Music2].map((Icon, i) => (
+            {[
+              { icon: FaFacebookF, label: "Facebook" },
+              { icon: FaInstagram, label: "Instagram" },
+              { icon: Music2, label: "Music" },
+            ].map(({ icon: Icon, label }, i) => (
               <a
                 key={i}
                 href="#"
-                aria-label="Social link"
+                aria-label={`${label} link`}
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-[rgb(246_238_223)]/25 transition-colors hover:border-[rgb(var(--accent))] hover:text-[rgb(var(--accent))]"
               >
                 <Icon size={17} />

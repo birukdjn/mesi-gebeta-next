@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Facebook, Instagram, Music2 } from "lucide-react";
+import { Music2 } from "lucide-react";
+import { FaFacebookF, FaInstagram } from "react-icons/fa6";
 
 export function Footer() {
   return (
@@ -22,11 +23,15 @@ export function Footer() {
               A neighborhood table for shared plates, slow coffee, and easy evenings. Come as you are.
             </p>
             <div className="mt-5 flex gap-3">
-              {[Facebook, Instagram, Music2].map((Icon, i) => (
+              {[
+                { icon: FaFacebookF, label: "Facebook" },
+                { icon: FaInstagram, label: "Instagram" },
+                { icon: Music2, label: "Music" },
+              ].map(({ icon: Icon, label }, i) => (
                 <a
                   key={i}
                   href="#"
-                  aria-label="Social link"
+                  aria-label={`${label} link`}
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-[rgb(246_238_223)]/20 transition-colors hover:border-[rgb(var(--accent))] hover:text-[rgb(var(--accent))]"
                 >
                   <Icon size={17} />
