@@ -17,6 +17,8 @@ const CATEGORIES: MenuCategory[] = [
       { name: "Chechebsa", desc: "Torn flatbread pan-fried in spiced butter, honey drizzle.", price: "$8" },
       { name: "Shakshuka", desc: "Eggs poached in a spiced tomato-pepper sauce.", price: "$11", tags: ["GF"] },
       { name: "Genfo Porridge", desc: "Barley porridge well, spiced butter, berbere.", price: "$7", tags: ["V", "GF"] },
+      { name: "Avocado Toast", desc: "Toasted sourdough, avocado, chili oil, herbs.", price: "$10", tags: ["V"] },
+      { name: "Baked Oats", desc: "Warm cinnamon oats, seasonal fruit, toasted nuts.", price: "$8", tags: ["V"] },
     ],
   },
   {
@@ -28,6 +30,8 @@ const CATEGORIES: MenuCategory[] = [
       { name: "Kitfo", desc: "Finely minced beef, mitmita, niter kibbeh, served your way.", price: "$19" },
       { name: "Shiro Wat", desc: "Spiced chickpea stew, simmered slow, served bubbling.", price: "$13", tags: ["V", "GF"] },
       { name: "Grilled Whole Fish", desc: "Market fish, awaze marinade, lemon, herb rice.", price: "$22", tags: ["GF"] },
+      { name: "Lamb Tibs", desc: "Charred lamb with herbs, pepper, green chili.", price: "$21", tags: ["GF"] },
+      { name: "Vegetable Kebab", desc: "Seasonal vegetables, garlic yogurt, charred lemon.", price: "$15", tags: ["V"] },
     ],
   },
   {
@@ -37,6 +41,8 @@ const CATEGORIES: MenuCategory[] = [
       { name: "Sambusa (3pc)", desc: "Crisp pastry, lentil or beef filling, tamarind dip.", price: "$8" },
       { name: "Vegetable Combo", desc: "Five seasonal vegetable stews, injera, for the table.", price: "$15", tags: ["V", "GF"] },
       { name: "Cheese & Honeycomb Board", desc: "Local cheeses, spiced nuts, flatbread, raw honey.", price: "$14" },
+      { name: "Spiced Meat Platter", desc: "Assorted grilled meats, pickles, greens, bread.", price: "$24" },
+      { name: "Charcuterie Board", desc: "Prosciutto, cheeses, olives, fig jam, sourdough.", price: "$22" },
     ],
   },
   {
@@ -47,6 +53,9 @@ const CATEGORIES: MenuCategory[] = [
       { name: "Spiced Tea (Shai)", desc: "Black tea, cinnamon, clove, fresh ginger.", price: "$4" },
       { name: "Tej (Honey Wine)", desc: "House-fermented honey wine, gesho bitters.", price: "$9" },
       { name: "Fresh Juice", desc: "Seasonal fruit, ask your server for today's blend.", price: "$6" },
+      { name: "Mango Lassi", desc: "Creamy yogurt drink with ripe mango and cardamom.", price: "$6", tags: ["V"] },
+      { name: "Citrus Spritz", desc: "Orange, grapefruit, tonic, basil.", price: "$7" },
+      { name: "Mocktail Garden", desc: "Cucumber, mint, lime, sparkling water.", price: "$6", tags: ["V"] },
     ],
   },
   {
@@ -55,6 +64,9 @@ const CATEGORIES: MenuCategory[] = [
     items: [
       { name: "Honey Bread Pudding", desc: "Warm spiced bread pudding, honey, whipped cream.", price: "$8" },
       { name: "Coffee Panna Cotta", desc: "House coffee, set cream, cocoa nib crunch.", price: "$7", tags: ["GF"] },
+      { name: "Baklava Slice", desc: "Layered pastry, pistachio, rose syrup.", price: "$6" },
+      { name: "Chocolate Mousse", desc: "Dark chocolate, sea salt, candied orange.", price: "$7" },
+      { name: "Fruit Tart", desc: "Buttery crust, vanilla cream, seasonal fruit.", price: "$8" },
     ],
   },
 ];

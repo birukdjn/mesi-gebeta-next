@@ -14,6 +14,9 @@ const EVENTS = [
   { d: "2", m: "Aug", title: "Family Style Sunday", desc: "Kids eat free with an adult entrée purchase, all day Sunday." },
   { d: "9", m: "Aug", title: "Lounge DJ Night", desc: "Guest DJ, extended happy hour until 9pm, lounge menu only." },
   { d: "16", m: "Aug", title: "Chef's Tasting Table", desc: "A guided tasting of five plates paired with house cocktails and a chef introduction." },
+  { d: "23", m: "Aug", title: "Wine & Spice Pairing", desc: "A sommelier-led tasting with roasted meats, cheeses, and house pours." },
+  { d: "30", m: "Aug", title: "Late Summer Patio Brunch", desc: "Brunch plates, fresh juices, and live jazz in the garden courtyard." },
+  { d: "6", m: "Sep", title: "Harvest Dinner Club", desc: "A seasonal chef's menu with wine pairings and intimate candlelit service." },
 ];
 
 export default function EventsPage() {

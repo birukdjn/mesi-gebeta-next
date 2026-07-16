@@ -18,6 +18,10 @@ const TILES = [
   { caption: "Sambusa plating", image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=80" },
   { caption: "Private event setup", image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80" },
   { caption: "House cocktail service", image: "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=900&q=80" },
+  { caption: "Chef plating a tasting menu", image: "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=900&q=80" },
+  { caption: "Fresh pastries and coffee", image: "https://images.unsplash.com/photo-1499638673689-79a0b5115d87?auto=format&fit=crop&w=900&q=80" },
+  { caption: "Lively dinner service", image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80" },
+  { caption: "Signature mocktail garnish", image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=80" },
 ];
 
 export default function GalleryPage() {
