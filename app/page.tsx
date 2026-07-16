@@ -119,9 +119,9 @@ export default function HomePage() {
           <Reveal delay={100}>
             <MenuList
               items={[
-                { name: "Doro Wat Stew", desc: "Slow-simmered chicken, berbere, boiled egg, served with injera.", price: "$16", tags: ["Chef's pick"] },
-                { name: "Tibs Skillet", desc: "Pan-seared beef, rosemary, peppers, onions.", price: "$18", tags: ["New"] },
-                { name: "Mesi Gebeta Coffee", desc: "House-roasted, brewed in a traditional jebena.", price: "$5", tags: ["Signature"] },
+                { name: "Doro Wat Stew", desc: "Slow-simmered chicken, berbere, boiled egg, served with injera.", price: "$16", tags: ["Chef's pick"], image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" },
+                { name: "Tibs Skillet", desc: "Pan-seared beef, rosemary, peppers, onions.", price: "$18", tags: ["New"], image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=900&q=80" },
+                { name: "Mesi Gebeta Coffee", desc: "House-roasted, brewed in a traditional jebena.", price: "$5", tags: ["Signature"], image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" },
               ]}
             />
           </Reveal>
@@ -155,6 +155,40 @@ export default function HomePage() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* DRINKS & COFFEE */}
+      <section className="border-y border-foreground/10 bg-card px-6 py-20 sm:py-24">
+        <div className="mx-auto grid max-w-container gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <Reveal>
+            <div className="overflow-hidden rounded-[2rem] shadow-xl">
+              <img
+                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1200&q=80"
+                alt="Coffee and cocktails served in a warm lounge setting"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={100}>
+            <Eyebrow>Drinks & coffee</Eyebrow>
+            <h2>From the first cup to the last cocktail.</h2>
+            <p className="prose-copy mt-3 text-muted-foreground">
+              Discover house coffee, spiced tea, fresh juices, and evening pours in one polished place.
+            </p>
+            <div className="mt-6 space-y-3">
+              {[
+                { name: "House Coffee", desc: "Slow-brewed and served with incense and a warm welcome." },
+                { name: "Signature Cocktails", desc: "Elegant pours with citrus, spice, and late-night energy." },
+                { name: "Mocktails & Juices", desc: "Bright, refreshing options for every table." },
+              ].map((drink) => (
+                <div key={drink.name} className="rounded border border-foreground/10 bg-background/70 p-4">
+                  <h3 className="text-base">{drink.name}</h3>
+                  <p className="mt-1 text-sm text-muted-foreground">{drink.desc}</p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
 

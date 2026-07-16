@@ -35,6 +35,13 @@ export default function ContactPage() {
             <p className="mt-3 text-sm text-muted-foreground">
               Whether you are planning a dinner for two, a birthday celebration, or a slow coffee stop, we are happy to help you find the right table.
             </p>
+            <div className="mt-5 overflow-hidden rounded-[1.5rem] border border-foreground/10">
+              <img
+                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80"
+                alt="Warm restaurant interior with candlelight and a cozy table setting"
+                className="h-64 w-full object-cover"
+              />
+            </div>
             <div className="mt-4 flex flex-col gap-5">
               {INFO.map(({ icon: Icon, title, body }) => (
                 <div key={title} className="flex gap-4">

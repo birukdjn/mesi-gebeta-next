@@ -79,11 +79,11 @@ export default function LoungePage() {
           <div className="mx-auto max-w-2xl">
             <MenuList
               items={[
-                { name: "Gebeta Old Fashioned", desc: "Bourbon, honey wine reduction, orange bitters.", price: "$12" },
-                { name: "Tej Spritz", desc: "House tej, prosecco, soda, citrus twist.", price: "$11" },
-                { name: "Smoked Berbere Margarita", desc: "Tequila, lime, berbere-salt rim.", price: "$13" },
-                { name: "Jebena Espresso Martini", desc: "House coffee, vodka, coffee liqueur.", price: "$13" },
-                { name: "Hibiscus Cooler", desc: "Hibiscus, ginger, lime, soda.", price: "$7", tags: ["N/A"] },
+                { name: "Gebeta Old Fashioned", desc: "Bourbon, honey wine reduction, orange bitters.", price: "$12", image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80" },
+                { name: "Tej Spritz", desc: "House tej, prosecco, soda, citrus twist.", price: "$11", image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=900&q=80" },
+                { name: "Smoked Berbere Margarita", desc: "Tequila, lime, berbere-salt rim.", price: "$13", image: "https://images.unsplash.com/photo-1546173159-ac820b48c02c?auto=format&fit=crop&w=900&q=80" },
+                { name: "Jebena Espresso Martini", desc: "House coffee, vodka, coffee liqueur.", price: "$13", image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" },
+                { name: "Hibiscus Cooler", desc: "Hibiscus, ginger, lime, soda.", price: "$7", tags: ["N/A"], image: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=900&q=80" },
               ]}
             />
           </div>
